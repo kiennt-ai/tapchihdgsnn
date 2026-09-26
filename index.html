@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Logo HĐGSNN: favicon / site icon -->
+  <link rel="icon" type="image/png" href="Logo_HDGS.png">
+  <link rel="shortcut icon" type="image/png" href="Logo_HDGS.png">
+  <link rel="apple-touch-icon" href="Logo_HDGS.png">
   <title>TRA CỨU DANH MỤC TẠP CHÍ KHOA HỌC ĐƯỢC HĐGSNN TÍNH ĐIỂM | QĐ 26/QĐ-HĐGSNN</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -36,6 +40,13 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+    /* HĐGSNN logo */
+    .hdgsnn-logo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
     .score-badge-2 { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
     .score-badge-1-5 { background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff; }
     .score-badge-1 { background-color: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
@@ -53,8 +64,14 @@
       <div class="flex items-center justify-between flex-wrap gap-4">
         <!-- Logo & Brand -->
         <div class="flex items-center space-x-3.5">
-          <div class="w-11 h-11 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-blue-300 shadow-inner">
-            <i class="fa-solid fa-book-bookmark text-2xl"></i>
+          <!-- Logo HĐGSNN trong banner -->
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-white flex items-center justify-center border border-white/30 shadow-lg overflow-hidden shrink-0">
+            <img
+              src="Logo_HDGS.png"
+              alt="Logo Hội đồng Giáo sư Nhà nước"
+              class="hdgsnn-logo"
+              loading="eager"
+            >
           </div>
           <div>
             <div class="flex items-center space-x-2">
